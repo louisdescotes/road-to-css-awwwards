@@ -164,13 +164,7 @@ interface Props {
   style?: string;
   isHover: string | null;
 }
-interface Props {
-    title: string;
-    color: string;
-    style?: string;
-    isHover: string | null;
-  }
-  
+
   function Card({ title, color, style, isHover }: Props) {
     const cardClass = `${style} w-fit rounded-md absolute ${
       isHover !== null && title !== isHover ? "grayscale blur-sm" : ""
