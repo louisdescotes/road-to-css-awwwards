@@ -70,8 +70,8 @@ export default function SentenceAppear({ text, fontSize = 16, className }: Sente
             className="absolute"
             style={{ width: "100%" }}
             variants={{
-              initial: { top: "120%" },
-              hovered: { top: "0%" },
+              initial: { top: "220%", transform: "rotate(0deg)" },
+              hovered: { top: "0%", transform: "rotate(0deg)" },
             }}
             transition={{
               duration: 1.4,
