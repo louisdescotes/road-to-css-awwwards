@@ -3,10 +3,11 @@ import { motion } from 'framer-motion';
 
 type LineWrapperProps = {
     text: string;
+    fontSize?: number;
     className?: string;
 };
 
-export default function SentenceAppear({ text, className }: LineWrapperProps) {
+export default function SentenceAppear({ text, fontSize, className }: LineWrapperProps) {
     const containerRef = useRef<HTMLDivElement>(null);
     const [lines, setLines] = useState<string[]>([]);
 
@@ -22,6 +23,7 @@ export default function SentenceAppear({ text, className }: LineWrapperProps) {
       visibility: "hidden",
       width: getComputedStyle(containerRef.current).width,
       whiteSpace: "normal",
+      fontSize: fontSize
     });
     document.body.appendChild(tempContainer);
 
@@ -79,7 +81,7 @@ export default function SentenceAppear({ text, className }: LineWrapperProps) {
             viewport={{ once: true }} ref={containerRef} className={`${className} h-full `}>
             {lines.map((line, index) => (
                 <span
-                key={index} className="line block h-7 relative overflow-hidden font-semibold text-base">
+                key={index} className="line block h-7 relative overflow-hidden font-semibold" style={{ fontSize: fontSize}}>
                         <motion.p variants={{
                             initial: { top: "120%",  },
                             hovered: { top: "0", },
