@@ -55,10 +55,6 @@ export default function SentenceAppear({ text, fontSize = 16, className }: Sente
       initial="initial"
       whileInView="hovered"
       viewport={{ once: true }}
-      variants={{
-        initial: {},
-        hovered: {},
-      }}
     >
       {lines.map((line, index) => (
         <span

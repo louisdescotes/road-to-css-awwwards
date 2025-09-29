@@ -3,7 +3,6 @@
 import Share from "../animations/card/share"
 import ToolbarHover from "../animations/nav/ToolbarHover"
 import SentenceAppear from "../animations/texts/sentenceAppear"
-import SentenceAppearWhite from "../animations/texts/sentenceAppearWhite"
 import TextAppear from "../animations/texts/textAppear"
 import ViewApparitionSentence from "../animations/texts/viewApparitionSentence"
 
