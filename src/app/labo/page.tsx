@@ -15,55 +15,55 @@ const Labo = () => {
 
     return (
         <section className="w-full h-full z-50">
-            <div className="flex items-end w-full h-screen ">
-                <section className="px-5 py-5 w-full h-full flex gap-24 items-center justify-between">
-                    <aside className="flex flex-col gap-1 w-full max-w-sm">
+            <div className="flex flex-col lg:flex-row items-end w-full h-screen ">
+                <section className="flex-col lg:flex-row px-5 py-5 w-full h-full flex gap-4 md:gap-8 lg:gap-24 items-start lg:items-center md:justify-between">
+                    <aside className="flex flex-col gap-1 w-full md:max-w-sm">
                         <SentenceAppear fontSize={18} text="Léanne" className="w-full" />
                         <SentenceAppear fontSize={12} text="Ce projet est une séance photo dédiée à Léanne, visant à capturer son authenticité, ses émotions et son univers personnel à travers des portraits modernes et expressifs. L’objectif est de créer une série d’images qui mêlent naturel et créativité, en jouant avec la lumière, les couleurs et les mises en scène pour raconter une histoire visuelle." className="w-full" />
                     </aside>
-                    <div className="w-full flex-1 min-w-[42rem]">
+                    <div className="w-full lg:flex-1 lg:min-w-[42rem]">
                         <ImagesReveal key={useImage} image={useImage} />
                     </div>
-                    <div className="flex items-center flex-wrap w-full gap-2 max-w-sm">
-                        <div className="max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("2.jpg")} onClick={() => setUseImage("2.jpg")}>
+                    <div className="grid grid-cols-4 lg:flex lg:items-center lg:flex-wrap w-full gap-2 lg:max-w-sm">
+                        <div className="lg:max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("2.jpg")} onClick={() => setUseImage("2.jpg")}>
                             <ImagesReveal image="2.jpg" />
                         </div>
-                        <div className="max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("3.jpg")} onClick={() => setUseImage("3.jpg")}>
+                        <div className="lg:max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("3.jpg")} onClick={() => setUseImage("3.jpg")}>
                             <ImagesReveal image="3.jpg" />
                         </div>
-                        <div className="max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("4.jpg")} onClick={() => setUseImage("4.jpg")}>
+                        <div className="lg:max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("4.jpg")} onClick={() => setUseImage("4.jpg")}>
                             <ImagesReveal image="4.jpg" />
                         </div>
 
-                        <div className="max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("5.jpg")} onClick={() => setUseImage("5.jpg")}>
+                        <div className="lg:max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("5.jpg")} onClick={() => setUseImage("5.jpg")}>
                             <ImagesReveal image="5.jpg" />
                         </div>
-                        <div className="max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("6.jpg")} onClick={() => setUseImage("6.jpg")}>
+                        <div className="lg:max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("6.jpg")} onClick={() => setUseImage("6.jpg")}>
                             <ImagesReveal image="6.jpg" />
                         </div>
-                        <div className="max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("7.jpg")} onClick={() => setUseImage("7.jpg")}>
+                        <div className="lg:max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("7.jpg")} onClick={() => setUseImage("7.jpg")}>
                             <ImagesReveal image="7.jpg" />
                         </div>
 
-                        <div className="max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("14.jpg")} onClick={() => setUseImage("14.jpg")}>
+                        <div className="lg:max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("14.jpg")} onClick={() => setUseImage("14.jpg")}>
                             <ImagesReveal image="14.jpg" />
                         </div>
-                        <div className="max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("10.jpg")} onClick={() => setUseImage("10.jpg")}>
+                        <div className="lg:max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("10.jpg")} onClick={() => setUseImage("10.jpg")}>
                             <ImagesReveal image="10.jpg" />
                         </div>
-                        <div className="max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("9.jpg")} onClick={() => setUseImage("9.jpg")}>
+                        <div className="lg:max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("9.jpg")} onClick={() => setUseImage("9.jpg")}>
                             <ImagesReveal image="9.jpg" />
 
                         </div>
 
-                        <div className="max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("15.jpg")} onClick={() => setUseImage("15.jpg")}>
+                        <div className="lg:max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("15.jpg")} onClick={() => setUseImage("15.jpg")}>
                             <ImagesReveal image="15.jpg" />
                         </div>
-                        <div className="max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("8.jpg")} onClick={() => setUseImage("8.jpg")}>
+                        <div className="lg:max-w-20 w-full h-auto cursor-pointer" onMouseEnter={() => setUseImage("8.jpg")} onClick={() => setUseImage("8.jpg")}>
                             <ImagesReveal image="8.jpg" />
                         </div>
                     </div>
-                    <div className="absolute flex justify-center w-full h-fit bottom-8 left-0">
+                    <div className="relative lg:absolute flex justify-center w-full h-fit bottom-8 left-0">
                         <motion.div
                             className="absolute inline-flex justify-center w-32"
                             initial="initial"
